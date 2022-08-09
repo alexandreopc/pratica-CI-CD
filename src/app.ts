@@ -5,7 +5,7 @@ const app = express();
 app.use(json());
 
 app.get("/students", async (req: Request, res: Response) => {
-  console.log("COLOQUEI UMA FEATURE NOVA EM, CONFIA!");
+  console.log("COLOQUEI duassss FEATURE NOVA EM, CONFIA!");
   const students = await prisma.student.findMany();
   res.send(students);
 });
